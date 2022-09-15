@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "4194b362-70e7-44c6-9c5b-3650bca3ae6a",
+		"name": "Growteste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23183920"
+	},
+	"item": [
+		{
+			"name": "Busca maquiagem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline",
+					"protocol": "http",
+					"host": [
+						"makeup-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products.json"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "maybelline"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca endereço",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/60762465/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"60762465",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://6322639bfd698dfa290b2e40.mockapi.io/produto",
+					"protocol": "https",
+					"host": [
+						"6322639bfd698dfa290b2e40",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir produtos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Cadeira Gamer\",\r\n    \"preco\": 1200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://6322639bfd698dfa290b2e40.mockapi.io/produto",
+					"protocol": "https",
+					"host": [
+						"6322639bfd698dfa290b2e40",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Correção de produtos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://6322639bfd698dfa290b2e40.mockapi.io/produto",
+					"protocol": "https",
+					"host": [
+						"6322639bfd698dfa290b2e40",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar produtos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://6322639bfd698dfa290b2e40.mockapi.io/produto/1",
+					"protocol": "https",
+					"host": [
+						"6322639bfd698dfa290b2e40",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
